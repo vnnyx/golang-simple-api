@@ -1,0 +1,33 @@
+###Get all customer
+GET http://localhost:8080/api/customer
+Accept: application/json
+
+###Add customer
+POST http://localhost:8080/api/customer
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Firdaus",
+  "username": "firdausptr",
+  "password": "password"
+}
+
+###Delete customer
+DELETE http://localhost:8080/api/customer/5
+Accept: application/json
+
+###Update customer
+PUT http://localhost:8080/api/customer/2
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "PutraK",
+  "username": "firdaus13",
+  "password": "lol3131"
+}
+
+###Get customer by Id
+GET http://localhost:8080/api/customer/4
+Accept: application/json
